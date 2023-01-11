@@ -1,0 +1,171 @@
+
+/*INICIO ESTILO GLOBAL*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    width: 100%;
+    text-align: center;
+}
+section{
+    padding-bottom: 60px;
+}
+.container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+}
+.titulo{
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+}
+h2{
+    font-size: 25px;
+    font-weight: normal;
+    padding: 20px 0;
+    margin-top: 10px 0;
+}
+p{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.uppercase{
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.link{
+    font-size: 18px;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 3px 3px 5px #000;
+ 
+}
+.link:hover{
+    color: #000;
+}
+.backgroundcolor{
+    background-color:rgba(16, 165, 165, 0.849);
+
+}
+/*FIM ESTILO GLOBAL*/
+
+/*INICIO ESTILO SECTION TOPO */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.menu img{
+    height: 60px;
+}
+/*FIM ESTILO SECTION TOPO*/
+
+/*INICIO ESTILO SECTION BANNER */
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url("/Assets/recepcao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+/*FIM ESTILO SECTION BANNER*/
+
+/*INICIO ESTILO SECTION SOBRE*/
+.sobre img{
+    height: 300px;
+    margin: 0 10px 0 0;
+}
+.sobre ul{
+    padding: 0 0 0 40px;
+    text-align: left;
+}/*FIM ESTILO SECTION SOBRE */
+
+/*INICIO ESTILO SECTION ESPECIALIDADES*/
+.vitrine figure{
+    width: calc(100% / 3 - 60px);
+    height: 100%;
+    margin: 0px auto;
+}
+ .vitrine img{
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(100, 99, 99);
+}
+/*FIM ESTILO SECTION ESPECIALIDADES*/
+
+/*INICIO ESTILO SECTION CONTATO*/
+.contato iframe{
+    width: 100%;
+    margin: 20px auto;
+}
+/*FIM ESTILO SECTION CONTATO*/
+
+/*INCIO ESTILO RODAPE*/
+.rodape{
+    text-align: center;
+    padding: 10px 0;
+}
+.rodape p{
+    color: #fff;
+    padding-bottom: 10px;
+}
+/*FIM ESTILO RODAPE*/
+
+/*INICIO ESTILO MEDIA QUERY*/
+@media only screen and (max-width:500px){
+    .menu{
+        display: block;
+    }
+    .menu nav{
+        width: calc(100% - 40px);
+        border-top: 2px solid rgb(5, 97, 89);
+        padding: 10px 0 5px 0;
+        margin: 0 auto;
+    }
+    .banner{
+        height: 200px;
+    }
+    .titulo{ font-size: 25px;}
+    p{
+        font-size: 14px;
+    }
+    .sobre img{
+        display: none;
+    }
+    .vitrine{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .vitrine figure{
+        width: calc(100% - 120px);
+    }
+    ul{
+        font-size: 14px;
+    }
+}
+
+/*FIM ESTILO MEDIA QUERY*/
